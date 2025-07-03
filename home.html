@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beranda - Sepak Bola</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #d0f0c0, #ffffff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-image: url('https://www.transparenttextures.com/patterns/soccer-ball.png');
+      background-repeat: repeat;
+      background-size: 80px 80px;
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: #f9fff7;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      border: 3px solid #1a5d00;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-columns: 1fr 300px;
+      grid-template-areas:
+        "header header"
+        "menu menu"
+        "content widget"
+        "bottom1 bottom2";
+      min-height: 80vh;
+      overflow: hidden;
+    }
+    header {
+      grid-area: header;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1a5d00;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+    nav {
+      grid-area: menu;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1a5d00;
+      font-weight: 700;
+      margin: 0 15px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #4caf50;
+      color: white;
+      box-shadow: 0 4px 10px rgba(76,175,80,0.4);
+    }
+    main {
+      grid-area: content;
+      font-size: 1.2rem;
+      color: #2a4d00;
+      line-height: 1.8;
+    }
+    main h2 {
+      color: #1a5d00;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #4caf50;
+      padding-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    main p {
+      margin-bottom: 20px;
+    }
+    .widget {
+      grid-area: widget;
+      background-color: #d9f0b8;
+      border-radius: 12px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      color: #2a4d00;
+    }
+    .bottom-widgets {
+      grid-column: 1 / span 2;
+      display: flex;
+      border-top: 2px solid #4caf50;
+      background-color: #e6f2d6;
+      border-radius: 0 0 12px 12px;
+      overflow: hidden;
+      box-shadow: inset 0 4px 10px rgba(76,175,80,0.1);
+    }
+    .bottom-widgets div {
+      flex: 1;
+      padding: 20px;
+      border-right: 1px solid #4caf50;
+      text-align: center;
+      font-weight: 700;
+      color: #1a5d00;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+    .bottom-widgets div:last-child {
+      border-right: none;
+    }
+    .bottom-widgets div:hover {
+      background-color: #4caf50;
+      color: white;
+      box-shadow: 0 4px 15px rgba(76,175,80,0.5);
+    }
+    footer {
+      grid-area: bottom1;
+      margin-top: 40px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Beranda Sepak Bola</header>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang Sepak Bola</a>
+      <a href="contact.html">Kontak</a>
+      <a href="help.html">Bantuan Sepak Bola</a>
+      <a href="profile.html">Profil Pemain</a>
+    </nav>
+    <main>
+      <h2>Selamat Datang di Website Sepak Bola</h2>
+      <p>Website ini menyediakan informasi lengkap tentang dunia sepak bola, mulai dari berita terkini, profil pemain, hingga tips dan trik bermain sepak bola.</p>
+      <p>Jelajahi menu di atas untuk mengetahui lebih banyak tentang sepak bola dan nikmati konten menarik yang kami sajikan.</p>
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWS-TrCtW3Hi1XYV0CSt-93SLRnZuJ-A88A&s alt="Lapangan Sepak Bola" style="max-width: 100%; height: auto; margin-bottom: 30px; border-radius: 15px; box-shadow: 0 8px 15px rgba(0,0,0,0.1);" />
+    </main>
+    <aside class="widget">
+      <h3>Widget Sepak Bola</h3>
+      <ul>
+        <li><a href="help.html">Bantuan Sepak Bola</a></li>
+        <li><a href="profile.html">Profil Pemain</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </aside>
+    <div class="bottom-widgets">
+      <div>
+        <h4>Berita Terbaru</h4>
+        <p>Dapatkan update terkini tentang pertandingan, transfer pemain, dan berita penting lainnya di dunia sepak bola.</p>
+        <a href=https://www.bola.net/ style="color: #1a5d00; text-decoration: underline;">Lihat Berita</a>
+      </div>
+      <div>
+        <h4>Jadwal Pertandingan</h4>
+        <p>Jangan lewatkan jadwal pertandingan penting dari liga-liga top dunia dan tim favorit Anda.</p>
+        <a href=https://www.google.com/search?q=jadwal+liga+inggris&oq=jadwal+&gs_lcrp=EgZjaHJvbWUqBwgJEAAYgAQyBggAEEUYOTIKCAEQABixAxiABDIKCAIQABixAxiABDIKCAMQABixAxiABDIQCAQQABiDARixAxiABBiKBTIHCAUQABiABDIKCAYQABixAxiABDIHCAcQABiABDIKCAgQABixAxiABDIHCAkQABiABNIBCDcxMTdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8 style="color: #1a5d00; text-decoration: underline;">Lihat Jadwal</a>
+      </div>
+      <div>
+        <h4>Tips Bermain</h4>
+        <p>Pelajari teknik dan strategi bermain sepak bola dari para ahli untuk meningkatkan kemampuan Anda di lapangan.</p>
+        <a href=https://www.kompas.id/baca/adv_post/tips-menjadi-pemain-sepak-bola-hebat style="color: #1a5d00; text-decoration: underline;">Pelajari Lebih Lanjut</a>
+      </div>
+    </div>
+    <footer>
+      &copy; 2024 Sepak Bola Website. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

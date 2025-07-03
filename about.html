@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Sepak Bola</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #d0f0c0, #ffffff);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 20px;
+      background-image: url('https://www.transparenttextures.com/patterns/soccer-ball.png');
+      background-repeat: repeat;
+      background-size: 80px 80px;
+      transition: background-color 0.5s ease;
+    }
+    body:hover {
+      background-color: #c8e6c9;
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: #f9fff7;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      padding: 30px;
+      border: 3px solid #1a5d00;
+      transition: box-shadow 0.3s ease;
+    }
+    .container:hover {
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+    header {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1a5d00;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px #4caf50;
+    }
+    nav {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1a5d00;
+      font-weight: 700;
+      margin: 0 15px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: inset 0 0 0 transparent;
+    }
+    nav a:hover {
+      background-color: #4caf50;
+      color: white;
+      box-shadow: 0 4px 10px rgba(76,175,80,0.6);
+    }
+    main {
+      font-size: 1.2rem;
+      color: #2a4d00;
+      line-height: 1.8;
+      transition: color 0.3s ease;
+    }
+    main h2 {
+      color: #1a5d00;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #4caf50;
+      padding-bottom: 8px;
+      letter-spacing: 1px;
+      text-shadow: 0 1px 1px #a5d6a7;
+    }
+    main p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    main img {
+      max-width: 320px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    main img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+    }
+    footer:hover {
+      color: #1a5d00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Tentang Sepak Bola</header>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang Sepak Bola</a>
+      <a href="contact.html">Kontak</a>
+      <a href="help.html">Bantuan Sepak Bola</a>
+      <a href="profile.html">Profil Pemain</a>
+    </nav>
+    <main>
+      <h2>Sejarah dan Informasi Sepak Bola</h2>
+      <p>Sepak bola adalah olahraga paling populer di dunia yang dimainkan oleh dua tim dengan tujuan mencetak gol ke gawang lawan.</p>
+      <p>Olahraga ini memiliki sejarah panjang yang dimulai di Inggris pada abad ke-19 dan telah berkembang menjadi olahraga internasional dengan jutaan penggemar.</p>
+      <p>Sepak bola tidak hanya tentang permainan, tetapi juga budaya, persahabatan, dan semangat kompetisi yang tinggi.</p>
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYW-BKHahyqype1QhXlFisQZMWCbCy9sq0Q&s alt="Sepak Bola" style="max-width: 300px; display: block; margin: 20px auto; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'"/>
+    </main>
+    <footer>
+      &copy; 2024 Sepak Bola Website. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
